@@ -1,5 +1,6 @@
 
 import { ChevronDown, Rocket, Zap } from 'lucide-react';
+import RotatingText from '././RotatingText/RotatingText';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -23,12 +24,24 @@ const Hero = () => {
             <span className="text-sm text-gray-300">Available for Web3 Projects</span>
           </div>
         </div>
+<h1 className="text-5xl md:text-7xl font-bold mb-6 flex flex-wrap items-center gap-4">
+  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+    Utkarsh Saxena
+  </span>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-          Utkarsh Saxena 
-          </span>
-        </h1>
+  <RotatingText
+    texts={['Web3!', 'MERN!', 'FullStack!', 'DevOps!']}
+    mainClassName="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text "
+    staggerFrom={"last"}
+    initial={{ y: "100%" }}
+    animate={{ y: 0 }}
+    exit={{ y: "-120%" }}
+    staggerDuration={0.025}
+    splitLevelClassName="overflow-hidden"
+    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+    rotationInterval={2000}
+  />
+</h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
           Crafting the decentralized future with cutting-edge blockchain solutions, 

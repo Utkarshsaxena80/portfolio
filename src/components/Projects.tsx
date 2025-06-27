@@ -1,5 +1,7 @@
 
 import { ExternalLink, Github, TrendingUp, Shield } from 'lucide-react';
+import proxyImage from '../public/image.png'; // adjust path if needed
+import prr from "../public/2.png"
 
 const Projects = () => {
   const projects = [
@@ -10,19 +12,31 @@ const Projects = () => {
       tags: ["Solidity", "React", "Web3.js", "Ethereum", "Polygon"],
       icon: <TrendingUp className="w-6 h-6" />,
       liveUrl: "https://hedgr-frontend-c8sy.vercel.app/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Utkarshsaxena80/hedgr-Frontend",
       featured: true
     },
     {
       title: "ChainGive",
       description: "Built a decentralized donation platform that enables cross-chain charitable giving, allowing users to donate crypto from any supported blockchain and have it bridged securely to the NGO's preferred chain",
-      image: "https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: prr,
       tags: [ "Solidity", "TypeScript"],
       icon: <Shield className="w-6 h-6" />,
       liveUrl: "https://ngo-frontend-nine.vercel.app/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Utkarshsaxena80/NGO-FRONTEND",
       featured: true
     },
+    
+      {
+      title: "MultiThreaded Proxy server in C",
+      description: "Built to understand how browsers communicate under the hood, how network requests are routed, and how to manage concurrent client connections using system-level APIs.",
+      image: proxyImage,
+      tags: [ "C"],
+      icon: <Shield className="w-6 h-6" />,
+      liveUrl: "/#",
+      githubUrl: "https://github.com/Utkarshsaxena80/proxy-multithreaded-webserver-C",
+      featured: true
+    },
+    
    
   ];
 
